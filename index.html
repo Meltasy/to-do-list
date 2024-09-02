@@ -11,16 +11,20 @@
             <button type="button" id="addTodo">Add todo</button>
             <dialog id="dialogTodo">
                 <form method="dialog" id="formTodo">
-                    <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required/>
-                    <div id="addSummary">
-                        <label for="summary">Summary:</label>
-                        <input type="summary" id="summary" name="summary" />
-                    </div>
-                    <div id="addNotes">
-                        <label for="notes">Notes:</label>
-                        <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
-                    </div>
+                    <ul>
+                        <li>
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" required/>
+                        </li>
+                        <li id="addSummary">
+                            <label for="summary">Summary:</label>
+                            <input type="summary" id="summary" name="summary" />
+                        </li>
+                        <li id="addNotes">
+                            <label for="notes">Notes:</label>
+                            <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+                        </li>
+                    </ul>
                     <div>
                         <button type="button" id="addDate" class="extras">Date</button>
                         <dialog id="dialogDate">
@@ -84,7 +88,9 @@
                     </div>
                     <div>
                         <button type="submit" id="saveTodo">Add</button>
+                        <button type="submit" id="updateTodo">Update</button>
                         <button type="button" id="cancelTodo">Cancel</button>
+                        <button type="button" id="removeTodo">Remove</button>
                     </div>
                 </form>
             </dialog>        
